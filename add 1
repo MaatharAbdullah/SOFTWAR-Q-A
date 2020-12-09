@@ -11,4 +11,14 @@ if cart != []:
             discount = (total*10)/100
             netprice = total - discount
             grandtotal+=netprice
+        print("****Item No :****",sno)
+        print ("Item Name : ",item[0],"  Price : ",item[1]," $. Qty : ",qty," | Discount : ", discount,"\nTotal Price is : ", total, " | Net Price is : ", netprice)
+        print("-----------------------------")
+        sno+=1
+    print("****Grand Total :****",grandtotal)
+    
+else:
+    print ("Nothing")
+
+input("\nPress enter to exit...")
 
