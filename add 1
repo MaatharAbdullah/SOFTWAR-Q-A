@@ -1,0 +1,14 @@
+Enter item Name or ( enter 1 to checkout ): """)
+while cmd in prices.keys():
+    cart+=[(cmd,prices[cmd])]
+    qty = int(input("Enter Quantity: "))    
+    cmd = input("Enter item Name or ( enter 1 to checkout ): ")
+print("you cart contains :\n")
+if cart != []:
+    for item in cart:
+        if qty >= 3:
+            total = item[1]*qty
+            discount = (total*10)/100
+            netprice = total - discount
+            grandtotal+=netprice
+
